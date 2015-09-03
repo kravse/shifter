@@ -22,7 +22,6 @@ i.e.
 
 ```
 <div style="background-image: url('../images/1.jpg');" class="bg-shifter"></div>
-
 ```
 
 3) Initialize the shifter using Shifter.shift(object, time)(i.e. Shifter.shift($('.test-box'), 6000); ) 
