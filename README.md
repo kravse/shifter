@@ -16,6 +16,13 @@ Setup the Background shifter
 
 1) Include the shifter.js file. 
 
-2) Add as many slides with the class .bg-shifter into any parent div. The shifter takes the height and width of the parent div, so you may need to style the parent appropriately. Each bg-shifter should have an inline style setting the background image. (i.e. <div style="background-image: url('../images/1.jpg');" class="bg-shifter"></div>)
+2) Add as many slides with the class .bg-shifter into any parent div. The shifter takes the height and width of the parent div, so you may need to style the parent appropriately. Each bg-shifter should have an inline style setting the background image. 
+
+i.e. 
+
+```
+<div style="background-image: url('../images/1.jpg');" class="bg-shifter"></div>
+
+```
 
 3) Initialize the shifter using Shifter.shift(object, time)(i.e. Shifter.shift($('.test-box'), 6000); ) 
