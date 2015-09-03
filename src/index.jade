@@ -1,0 +1,28 @@
+doctype
+html.no-js
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='styles/main.min.css')
+
+  body
+   
+    .test-box
+
+      .bg-shifter(style="background-image: url('../images/1.jpg');")
+      
+      .bg-shifter(style="background-image: url('../images/2.jpg');")
+      
+      .bg-shifter(style="background-image: url('../images/3.jpg');")
+
+      .bg-shifter(style="background-image: url('../images/4.jpg');")
+
+
+
+    script window.jQuery || document.write('<script src="scripts/vendor/jquery.js"><\/script>')
+    script(src='scripts/main.min.js')
+    script(type='text/javascript').
+      Shifter.shift($('.test-box'), 6000); 

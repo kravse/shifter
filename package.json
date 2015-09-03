@@ -1,0 +1,33 @@
+{
+  "name": "",
+  "description": "",
+  "version": "0.0.1",
+  "homepage": "",
+  "author": "",
+  "main": "build.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "dependencies": {
+    "gulp-uglify": "^1.0.1"
+  },
+  "devDependencies": {
+    "jquery": "2.1.4",
+    "jade": "*",
+    "gulp": "*",
+    "gulp-stylus": "*",
+    "gulp-util": "*",
+    "gulp-load-plugins": "*",
+    "gulp-concat": "*",
+    "gulp-imagemin": "*",
+    "gulp-jade": "*",
+    "gulp-rename": "*", 
+    "gulp-coffee": "*",
+    "gulp-minify-css": "*",
+    "coffee-script": "*",
+    "nib": "*"
+  },
+  "keywords": [],
+  "readmeFilename": "README.md",
+  "license": "BSD"
+}
