@@ -5,6 +5,8 @@ Shifter = (()->
 
     zIndex = 0
     shiftArray = []  
+
+    $element.wrapAll( "<div class='bg-shifter-inner' />");
      
     $bgShifter = $('.bg-shifter', $element)
 
@@ -18,18 +20,22 @@ Shifter = (()->
             zIndex = 0
 
     $bgShifter.css('z-index', zIndex - 1).each (i) ->
-      console.log('yooo dude')
       $(this).addClass('shift-'+i)
       shiftArray.push($(this))
 
     shifterCount = shiftArray.length
     count = shifterCount-1
+    $previousSlide = false
 
     setInterval (->
-      shiftArray[count].css({'opacity': '0'})
+      if($previousSlide)
+        $previousSlide.detach().prependTo($('.bg-shifter-inner', $element)).css('opacity','1')
+
+      shiftArray[count].css('opacity', '0')
+      $previousSlide = shiftArray[count]; 
+      
       if(count-1 < 0)
         count = shifterCount - 1
-        $bgShifter.css({'opacity': '1'})
       else
          count--
     ), time
