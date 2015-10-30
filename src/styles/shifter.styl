@@ -1,6 +1,6 @@
 .shift-parent
   position: relative
-
+  
   .bg-shifter-inner
     z-index: -1
     position: absolute
@@ -8,6 +8,7 @@
     height: 100%
     top: 0
     left: 0
+    overflow: hidden
     
   .bg-shifter
     position: absolute
@@ -16,8 +17,7 @@
     height: 100%
     top: 0
     left: 0
-    z-index: -1
     background-position: no-repeat
     background-size: cover
     background-position: center center
-    transition: opacity 1s ease
+    transition: opacity 1s ease, transform 1s ease
